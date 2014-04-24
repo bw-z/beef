@@ -76,7 +76,8 @@ beef:
         #   gem "dm-mysql-adapter"
         # if you want to switch drivers from sqlite to postgres (or mysql).
         # Finally, run a 'bundle install' command and start BeEF.
-        driver: "sqlite"
+        driver: "postgresql"
+        database: "beef"
 
         # db_file is only used for sqlite
         db_file: "beef.db"

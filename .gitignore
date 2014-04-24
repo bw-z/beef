@@ -4,5 +4,3 @@ custom-config.yaml
 .DS_Store
 .gitignore
 .rvmrc
-
-*.lock

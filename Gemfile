@@ -24,12 +24,12 @@ elsif !RUBY_PLATFORM.downcase.include?("darwin")
   gem "execjs"
 end
 
+gem 'pg'
 gem "ansi"
 gem "term-ansicolor", :require => "term/ansicolor"
 gem "dm-core"
 gem "json"
 gem "data_objects"
-gem "dm-sqlite-adapter"  # SQLite support
 #gem dm-postgres-adapter # PostgreSQL support
 #gem dm-mysql-adapter    # MySQL support
 gem "parseconfig"
@@ -56,5 +56,7 @@ if ENV['BEEF_TEST']
   # RESTful API tests/generic command module tests
   gem "rest-client", "~> 1.6.7"
 end
+
+ruby '2.1.1'
 
 source "http://rubygems.org"
